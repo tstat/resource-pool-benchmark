@@ -1,0 +1,381 @@
+Up to date
+benchmarking s=5 resource-pool
+time                 135.4 ms   (134.4 ms .. 136.2 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 135.9 ms   (135.3 ms .. 136.4 ms)
+std dev              875.9 μs   (608.2 μs .. 1.289 ms)
+mutatorCpuSeconds:   0.965 R²   (0.920 R² .. 0.994 R²)
+  iters              5.999e-2   (4.543e-2 .. 7.316e-2)
+  y                  1.662e-2   (-3.046e-2 .. 0.114)
+variance introduced by outliers: 11% (moderately inflated)
+
+benchmarking s=1 resource-pool-patched
+time                 139.0 ms   (136.4 ms .. 141.4 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 135.6 ms   (133.6 ms .. 137.6 ms)
+std dev              3.061 ms   (1.981 ms .. 4.438 ms)
+mutatorCpuSeconds:   0.980 R²   (0.937 R² .. 0.999 R²)
+  iters              0.108      (0.100 .. 0.123)
+  y                  -0.127     (-0.216 .. -8.457e-2)
+variance introduced by outliers: 11% (moderately inflated)
+
+benchmarking t=500/c=25/d=2000/s=1 resource-pool
+time                 848.0 ms   (779.1 ms .. 927.5 ms)
+                     0.999 R²   (0.996 R² .. 1.000 R²)
+mean                 858.1 ms   (843.2 ms .. 871.5 ms)
+std dev              15.69 ms   (12.66 ms .. 17.80 ms)
+mutatorCpuSeconds:   1.000 R²   (0.999 R² .. 1.000 R²)
+  iters              13.897     (13.312 .. 14.438)
+  y                  -0.151     (-1.391 .. 1.989)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=25/d=2000/s=5 resource-pool
+time                 946.6 ms   (715.2 ms .. 1.268 s)
+                     0.987 R²   (0.963 R² .. 1.000 R²)
+mean                 925.1 ms   (847.7 ms .. 960.1 ms)
+std dev              58.72 ms   (14.88 ms .. 80.81 ms)
+mutatorCpuSeconds:   0.957 R²   (0.887 R² .. 1.000 R²)
+  iters              11.773     (6.313 .. 19.241)
+  y                  -1.087     (-19.514 .. 19.268)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=25/d=2000/s=25 resource-pool
+time                 545.1 ms   (540.2 ms .. 554.0 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 548.5 ms   (547.0 ms .. 550.4 ms)
+std dev              2.123 ms   (642.4 μs .. 2.881 ms)
+mutatorCpuSeconds:   0.984 R²   (0.977 R² .. 1.000 R²)
+  iters              1.390      (1.135 .. 1.881)
+  y                  0.107      (-0.601 .. 0.970)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=25/d=2000/s=1 resource-pool-patched
+time                 482.7 ms   (474.3 ms .. 492.4 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 485.0 ms   (483.7 ms .. 488.4 ms)
+std dev              2.231 ms   (57.72 μs .. 2.703 ms)
+mutatorCpuSeconds:   0.989 R²   (NaN R² .. 1.000 R²)
+  iters              0.180      (0.131 .. 0.216)
+  y                  4.254e-2   (-1.296e-2 .. 0.218)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=25/d=10000/s=1 resource-pool
+time                 2.770 s    (2.486 s .. 2.906 s)
+                     0.999 R²   (0.997 R² .. 1.000 R²)
+mean                 2.653 s    (2.585 s .. 2.709 s)
+std dev              68.13 ms   (33.95 ms .. 94.79 ms)
+mutatorCpuSeconds:   0.984 R²   (0.977 R² .. 1.000 R²)
+  iters              31.084     (21.121 .. 38.887)
+  y                  -0.883     (-27.923 .. 13.792)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=25/d=10000/s=5 resource-pool
+time                 2.542 s    (2.406 s .. 2.735 s)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 2.536 s    (2.507 s .. 2.551 s)
+std dev              27.64 ms   (2.065 ms .. 34.63 ms)
+mutatorCpuSeconds:   0.975 R²   (0.911 R² .. 1.000 R²)
+  iters              14.313     (7.920 .. 20.462)
+  y                  -0.943     (-23.531 .. 14.097)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=25/d=10000/s=25 resource-pool
+time                 2.359 s    (2.324 s .. 2.383 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.339 s    (2.328 s .. 2.347 s)
+std dev              11.00 ms   (8.552 ms .. 13.00 ms)
+mutatorCpuSeconds:   0.971 R²   (NaN R² .. 1.000 R²)
+  iters              3.402      (2.066 .. 5.147)
+  y                  -0.536     (-4.814 .. 4.429)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=25/d=10000/s=1 resource-pool-patched
+time                 2.305 s    (2.281 s .. 2.358 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.290 s    (2.285 s .. 2.298 s)
+std dev              8.732 ms   (638.8 μs .. 10.74 ms)
+mutatorCpuSeconds:   0.949 R²   (0.896 R² .. NaN R²)
+  iters              0.674      (0.399 .. 1.143)
+  y                  -0.149     (-1.834 .. 0.396)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=50/d=2000/s=1 resource-pool
+time                 473.5 ms   (455.2 ms .. 499.5 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 484.2 ms   (477.3 ms .. 492.5 ms)
+std dev              9.516 ms   (5.825 μs .. 11.65 ms)
+mutatorCpuSeconds:   0.999 R²   (0.998 R² .. 1.000 R²)
+  iters              7.953      (7.398 .. 8.412)
+  y                  0.349      (-0.923 .. NaN)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=50/d=2000/s=5 resource-pool
+time                 540.9 ms   (447.4 ms .. 624.5 ms)
+                     0.996 R²   (0.987 R² .. 1.000 R²)
+mean                 585.2 ms   (554.7 ms .. 611.0 ms)
+std dev              31.82 ms   (11.23 ms .. 40.85 ms)
+mutatorCpuSeconds:   0.995 R²   (0.985 R² .. 1.000 R²)
+  iters              7.002      (6.010 .. 8.517)
+  y                  1.610      (-3.857 .. NaN)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=50/d=2000/s=10 resource-pool
+time                 489.4 ms   (303.0 ms .. 753.5 ms)
+                     0.969 R²   (0.917 R² .. 1.000 R²)
+mean                 501.0 ms   (456.0 ms .. 528.9 ms)
+std dev              43.51 ms   (12.96 ms .. 58.34 ms)
+mutatorCpuSeconds:   0.909 R²   (0.794 R² .. 1.000 R²)
+  iters              5.270      (1.668 .. 10.270)
+  y                  0.102      (NaN .. 7.811)
+variance introduced by outliers: 22% (moderately inflated)
+
+benchmarking t=500/c=50/d=2000/s=50 resource-pool
+time                 255.8 ms   (243.1 ms .. 266.0 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 257.0 ms   (254.3 ms .. 259.5 ms)
+std dev              3.409 ms   (2.527 ms .. 4.275 ms)
+mutatorCpuSeconds:   0.948 R²   (0.718 R² .. 1.000 R²)
+  iters              0.300      (0.163 .. 0.380)
+  y                  2.681e-3   (-0.168 .. 0.593)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking t=500/c=50/d=2000/s=1 resource-pool-patched
+time                 242.7 ms   (239.7 ms .. 245.8 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 243.7 ms   (243.1 ms .. 244.5 ms)
+std dev              899.9 μs   (432.1 μs .. 1.250 ms)
+mutatorCpuSeconds:   1.000 R²   (1.000 R² .. 1.000 R²)
+  iters              0.110      (0.108 .. 0.111)
+  y                  6.821e-3   (3.947e-3 .. 1.314e-2)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking t=500/c=50/d=10000/s=1 resource-pool
+time                 1.426 s    (1.366 s .. 1.457 s)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 1.505 s    (1.470 s .. 1.547 s)
+std dev              45.68 ms   (17.78 ms .. 62.67 ms)
+mutatorCpuSeconds:   0.998 R²   (0.997 R² .. 1.000 R²)
+  iters              19.461     (17.216 .. 20.590)
+  y                  2.308      (-1.507 .. 5.535)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=50/d=10000/s=5 resource-pool
+time                 1.427 s    (NaN s .. 1.556 s)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 1.505 s    (1.453 s .. 1.527 s)
+std dev              38.91 ms   (13.82 ms .. 51.04 ms)
+mutatorCpuSeconds:   0.996 R²   (0.996 R² .. 1.000 R²)
+  iters              13.322     (11.371 .. 15.085)
+  y                  3.073      (0.405 .. 9.926)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=50/d=10000/s=10 resource-pool
+time                 1.305 s    (1.190 s .. 1.361 s)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 1.315 s    (1.283 s .. 1.342 s)
+std dev              36.62 ms   (12.18 ms .. 50.17 ms)
+mutatorCpuSeconds:   0.993 R²   (0.986 R² .. 1.000 R²)
+  iters              6.608      (5.081 .. 7.481)
+  y                  1.144      (NaN .. 3.353)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=50/d=10000/s=50 resource-pool
+time                 1.147 s    (1.122 s .. 1.163 s)
+                     1.000 R²   (1.000 R² .. NaN R²)
+mean                 1.160 s    (1.152 s .. 1.175 s)
+std dev              14.20 ms   (291.9 μs .. 17.02 ms)
+mutatorCpuSeconds:   0.880 R²   (0.613 R² .. 1.000 R²)
+  iters              0.631      (-5.786e-2 .. 1.000)
+  y                  0.340      (NaN .. 1.312)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=500/c=50/d=10000/s=1 resource-pool-patched
+time                 1.137 s    (1.122 s .. 1.163 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 1.148 s    (1.140 s .. 1.157 s)
+std dev              9.807 ms   (3.166 ms .. 13.36 ms)
+mutatorCpuSeconds:   0.820 R²   (0.750 R² .. 1.000 R²)
+  iters              0.253      (3.494e-2 .. 0.556)
+  y                  0.323      (-0.747 .. 0.661)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=2000/s=1 resource-pool
+time                 1.687 s    (1.604 s .. 1.816 s)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 1.689 s    (1.659 s .. 1.720 s)
+std dev              34.41 ms   (18.84 ms .. 48.46 ms)
+mutatorCpuSeconds:   1.000 R²   (1.000 R² .. 1.000 R²)
+  iters              30.455     (29.569 .. 31.141)
+  y                  -1.180     (-2.235 .. 1.944)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=2000/s=5 resource-pool
+time                 2.126 s    (1.980 s .. 2.201 s)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 1.982 s    (1.912 s .. 2.043 s)
+std dev              74.23 ms   (26.09 ms .. 94.37 ms)
+mutatorCpuSeconds:   0.998 R²   (0.994 R² .. 1.000 R²)
+  iters              31.177     (27.325 .. 33.857)
+  y                  -6.373     (-14.105 .. -1.043)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=2000/s=25 resource-pool
+time                 1.348 s    (1.138 s .. 1.558 s)
+                     0.997 R²   (0.988 R² .. 1.000 R²)
+mean                 1.339 s    (1.283 s .. 1.370 s)
+std dev              53.88 ms   (19.70 ms .. 72.42 ms)
+mutatorCpuSeconds:   0.974 R²   (0.907 R² .. 1.000 R²)
+  iters              8.410      (4.445 .. 11.790)
+  y                  -0.680     (-9.985 .. 4.704)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=2000/s=1 resource-pool-patched
+time                 975.4 ms   (947.2 ms .. 1.006 s)
+                     1.000 R²   (1.000 R² .. NaN R²)
+mean                 975.8 ms   (971.7 ms .. 979.9 ms)
+std dev              5.282 ms   (2.198 ms .. 7.015 ms)
+mutatorCpuSeconds:   0.990 R²   (0.969 R² .. 1.000 R²)
+  iters              0.475      (0.371 .. NaN)
+  y                  1.021e-2   (-0.358 .. 0.351)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=10000/s=1 resource-pool
+time                 5.448 s    (5.339 s .. 5.529 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 5.451 s    (5.436 s .. 5.468 s)
+std dev              19.88 ms   (7.378 ms .. 26.39 ms)
+mutatorCpuSeconds:   0.998 R²   (0.994 R² .. 1.000 R²)
+  iters              82.196     (72.976 .. 90.606)
+  y                  0.348      (-18.869 .. 34.021)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=10000/s=5 resource-pool
+time                 5.444 s    (5.037 s .. 5.720 s)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 5.307 s    (5.214 s .. 5.370 s)
+std dev              92.82 ms   (38.28 ms .. 129.1 ms)
+mutatorCpuSeconds:   0.993 R²   (0.982 R² .. 1.000 R²)
+  iters              66.614     (50.150 .. 73.942)
+  y                  -31.774    (-55.882 .. -8.298)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=10000/s=25 resource-pool
+time                 4.805 s    (4.690 s .. 4.942 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 4.832 s    (4.801 s .. 4.851 s)
+std dev              30.75 ms   (11.24 ms .. 42.36 ms)
+mutatorCpuSeconds:   0.990 R²   (0.969 R² .. 1.000 R²)
+  iters              15.122     (11.750 .. 19.712)
+  y                  1.034      (-15.594 .. 8.292)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=25/d=10000/s=1 resource-pool-patched
+time                 4.602 s    (4.550 s .. 4.665 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 4.618 s    (4.609 s .. 4.633 s)
+std dev              14.27 ms   (65.10 μs .. 17.13 ms)
+mutatorCpuSeconds:   0.999 R²   (0.999 R² .. 1.000 R²)
+  iters              1.555      (1.454 .. 1.682)
+  y                  2.028e-2   (-0.167 .. 0.371)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=2000/s=1 resource-pool
+time                 1.016 s    (976.7 ms .. 1.052 s)
+                     1.000 R²   (NaN R² .. 1.000 R²)
+mean                 996.9 ms   (977.0 ms .. 1.007 s)
+std dev              18.83 ms   (1.543 ms .. 23.71 ms)
+mutatorCpuSeconds:   1.000 R²   (1.000 R² .. 1.000 R²)
+  iters              18.636     (18.330 .. 19.120)
+  y                  -0.433     (-1.107 .. 0.474)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=2000/s=5 resource-pool
+time                 1.248 s    (1.065 s .. 1.497 s)
+                     0.994 R²   (0.992 R² .. 1.000 R²)
+mean                 1.230 s    (1.182 s .. 1.278 s)
+std dev              56.79 ms   (42.22 ms .. 65.85 ms)
+mutatorCpuSeconds:   0.993 R²   (0.991 R² .. 1.000 R²)
+  iters              19.030     (15.911 .. 23.209)
+  y                  -0.985     (-15.745 .. 3.826)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=2000/s=10 resource-pool
+time                 1.089 s    (991.8 ms .. 1.175 s)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 1.154 s    (1.121 s .. 1.177 s)
+std dev              31.72 ms   (1.018 ms .. 39.22 ms)
+mutatorCpuSeconds:   0.999 R²   (0.999 R² .. 1.000 R²)
+  iters              14.507     (13.438 .. NaN)
+  y                  2.337      (0.478 .. 6.055)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=2000/s=50 resource-pool
+time                 560.6 ms   (542.2 ms .. 589.7 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 565.7 ms   (561.7 ms .. 572.5 ms)
+std dev              6.584 ms   (1.053 ms .. 8.339 ms)
+mutatorCpuSeconds:   0.992 R²   (0.973 R² .. 1.000 R²)
+  iters              1.513      (1.169 .. 1.898)
+  y                  9.205e-2   (-0.428 .. 1.029)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=2000/s=1 resource-pool-patched
+time                 491.0 ms   (475.4 ms .. 510.6 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 488.9 ms   (486.1 ms .. 490.6 ms)
+std dev              2.733 ms   (888.0 μs .. 3.657 ms)
+mutatorCpuSeconds:   0.969 R²   (NaN R² .. 1.000 R²)
+  iters              0.254      (0.170 .. 0.389)
+  y                  -4.127e-2  (-0.529 .. 0.129)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=10000/s=1 resource-pool
+time                 2.694 s    (2.633 s .. 2.747 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.722 s    (2.707 s .. 2.731 s)
+std dev              14.88 ms   (5.637 ms .. 20.39 ms)
+mutatorCpuSeconds:   1.000 R²   (1.000 R² .. 1.000 R²)
+  iters              44.089     (43.632 .. 44.510)
+  y                  1.484      (0.344 .. 2.099)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=10000/s=5 resource-pool
+time                 2.889 s    (2.851 s .. 2.928 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.872 s    (2.864 s .. 2.881 s)
+std dev              9.574 ms   (4.294 ms .. 13.39 ms)
+mutatorCpuSeconds:   0.992 R²   (NaN R² .. 1.000 R²)
+  iters              36.426     (29.086 .. 46.356)
+  y                  -1.235     (-37.213 .. 14.597)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=10000/s=10 resource-pool
+time                 2.567 s    (2.514 s .. 2.609 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.654 s    (2.615 s .. 2.715 s)
+std dev              64.68 ms   (7.404 ms .. 81.11 ms)
+mutatorCpuSeconds:   0.996 R²   (0.996 R² .. 1.000 R²)
+  iters              17.202     (14.671 .. 19.413)
+  y                  7.108      (-0.590 .. 10.864)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=10000/s=50 resource-pool
+time                 2.370 s    (2.299 s .. 2.424 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.371 s    (2.365 s .. 2.381 s)
+std dev              10.15 ms   (609.5 μs .. 12.60 ms)
+mutatorCpuSeconds:   0.996 R²   (0.995 R² .. 1.000 R²)
+  iters              3.308      (2.776 .. 3.682)
+  y                  1.193      (0.613 .. 3.075)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking t=1000/c=50/d=10000/s=1 resource-pool-patched
+time                 2.314 s    (2.206 s .. 2.363 s)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 2.340 s    (2.317 s .. 2.349 s)
+std dev              16.39 ms   (3.395 ms .. 21.31 ms)
+mutatorCpuSeconds:   0.872 R²   (0.614 R² .. 1.000 R²)
+  iters              0.957      (-7.791e-2 .. 1.439)
+  y                  0.822      (2.880e-2 .. 4.511)
+variance introduced by outliers: 19% (moderately inflated)
+
