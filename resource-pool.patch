@@ -1,0 +1,13 @@
+diff --git a/resource-pool.cabal b/resource-pool-waiter-patch.cabal
+similarity index 96%
+rename from resource-pool.cabal
+rename to resource-pool-waiter-patch.cabal
+index 2a64ac4..d53472b 100644
+--- a/resource-pool.cabal
++++ b/resource-pool-waiter-patch.cabal
+@@ -1,4 +1,4 @@
+-name:                resource-pool
++name:                resource-pool-waiter-patch
+ version:             0.2.3.2
+ synopsis:            A high-performance striped resource pooling implementation
+ description:

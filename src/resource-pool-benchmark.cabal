@@ -1,0 +1,85 @@
+cabal-version:      2.4
+name:               resource-pool-benchmark
+version:            0.1.0.0
+
+author: Travis Staton <hello@travisstaton.com>
+copyright: 2021, Travis Staton
+extra-source-files: CHANGELOG.md
+homepage: https://github.com/tstat/resource-pool-benchmark
+license-file: LICENSE
+license: BSD-3-Clause
+maintainer: Travis Staton <hello@travisstaton.com>
+
+library
+    exposed-modules: AbstractPool
+                     Benchmarks
+                     TestConfig
+
+    build-depends:    base >= 4.14 && < 5
+                      , resource-pool
+                      , resource-pool-waiter-patch
+                      , time
+                      , criterion
+
+
+    hs-source-dirs:   lib
+    default-language: Haskell2010
+    ghc-options:
+      -Wall
+      -Wcompat
+      -Widentities
+      -Wincomplete-record-updates
+      -Wincomplete-uni-patterns
+      -Wredundant-constraints
+      -Wpartial-fields
+      -O2
+
+benchmark bench
+  type: exitcode-stdio-1.0
+  main-is: ThreadDelay.hs
+  build-depends: base
+               , resource-pool
+               , resource-pool-benchmark
+               , criterion
+               , bytestring
+               , time
+               , stm
+  hs-source-dirs: bench
+  default-language: Haskell2010
+  ghc-options:
+    -Wall
+    -Wcompat
+    -Widentities
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+    -Wredundant-constraints
+    -Wpartial-fields
+    -O2
+    -rtsopts
+    -threaded
+
+benchmark hasql-bench
+  type: exitcode-stdio-1.0
+  main-is: Hasql.hs
+  build-depends: base
+               , resource-pool-benchmark
+               , resource-pool
+               , criterion
+               , hasql
+               , bytestring
+               , time
+               , stm
+  hs-source-dirs: bench
+  default-language: Haskell2010
+  ghc-options:
+    -Wall
+    -Wcompat
+    -Widentities
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+    -Wredundant-constraints
+    -Wpartial-fields
+    -O2
+    -rtsopts
+    -threaded
+    "-with-rtsopts=-N -A128m -I0 -qn2 -T"
