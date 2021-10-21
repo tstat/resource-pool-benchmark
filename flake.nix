@@ -44,7 +44,7 @@
                       resource-pool-waiter-patch = let
                         psrc = builtins.fetchGit {
                           url = "https://github.com/tstat/pool";
-                          rev = "dfb71e1cfc054a96cd0f037e92fe12130b5db439";
+                          rev = "243a5b365b26775ea68ec138e18172662135d036";
                         };
                         p = self.callCabal2nix "resource-pool-waiter-patch" psrc
                           { };
